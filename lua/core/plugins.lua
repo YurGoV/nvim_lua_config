@@ -13,8 +13,56 @@ require("lazy").setup({
         'nvim-telescope/telescope.nvim',
         tag = '0.1.1',
         dependencies = {'nvim-lua/plenary.nvim'}
-    }, {'cooperuser/glowbeam.nvim'}, {'joshdick/onedark.vim'},
-    {'nvim-treesitter/nvim-treesitter'}, {'neovim/nvim-lspconfig'},
+    }, {'cooperuser/glowbeam.nvim'}, { -- // TODO: remove??
+        'joshdick/onedark.vim',
+        code_style = {
+            comments = 'italic',
+            keywords = 'none',
+            functions = 'italic',
+            strings = 'none',
+            variables = 'italic'
+        }
+    }, -- {'catppuccin/nvim'}, -- // TODO: remove??
+    {
+        "catppuccin/nvim",
+        name = "catppuccin",
+        opts = {
+            integrations = {
+                nvimtree = false,
+                ts_rainbow = false,
+                aerial = true,
+                dap = {enabled = true, enable_ui = true},
+                mason = true,
+                neotree = true,
+                notify = true,
+                semantic_tokens = true,
+                symbols_outline = true,
+                telescope = true,
+                which_key = true
+            },
+            styles = {
+                -- comments = { "italic" }, -- Change the style of comments
+                conditionals = {"italic"},
+                loops = {},
+                functions = {'italic'},
+                keywords = {},
+                strings = {},
+                variables = {'italic'},
+                numbers = {},
+                booleans = {},
+                properties = {},
+                types = {},
+                operators = {'italic'}
+            },
+            color_overrides = {
+                mocha = {
+                    base = "#000000",
+                    mantle = "#000000",
+                    crust = "#000000"
+                }
+            }
+        }
+    }, {'nvim-treesitter/nvim-treesitter'}, {'neovim/nvim-lspconfig'},
     {'hrsh7th/cmp-nvim-lsp'}, {'hrsh7th/cmp-buffer'}, {'hrsh7th/cmp-path'},
     {'hrsh7th/cmp-cmdline'}, {'hrsh7th/nvim-cmp'}, {'lewis6991/gitsigns.nvim'},
     {
