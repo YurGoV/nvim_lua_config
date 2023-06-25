@@ -18,16 +18,16 @@ require("lazy").setup({
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
 	{ "cooperuser/glowbeam.nvim" },
-	{ -- // TODO: remove??
-		"joshdick/onedark.vim",
-		code_style = {
-			comments = "italic",
-			keywords = "none",
-			functions = "italic",
-			strings = "none",
-			variables = "italic",
-		},
-	}, -- {'catppuccin/nvim'}, -- // TODO: remove??
+	-- { -- // TODO: remove??
+	-- 	"joshdick/onedark.vim",
+	-- 	code_style = {
+	-- 		comments = "italic",
+	-- 		keywords = "none",
+	-- 		functions = "italic",
+	-- 		strings = "none",
+	-- 		variables = "italic",
+	-- 	},
+	-- }, -- {'catppuccin/nvim'}, -- // TODO: remove??
 	{
 		"catppuccin/nvim",
 		name = "catppuccin",
