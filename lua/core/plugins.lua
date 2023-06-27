@@ -17,8 +17,7 @@ require("lazy").setup({
 		tag = "0.1.1",
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
-	{ "cooperuser/glowbeam.nvim" },
-	-- { -- // TODO: remove??
+	{ "cooperuser/glowbeam.nvim" }, -- { -- // TODO: remove??
 	-- 	"joshdick/onedark.vim",
 	-- 	code_style = {
 	-- 		comments = "italic",
