@@ -47,3 +47,6 @@ vim.api.nvim_set_keymap("n", "<leader>td", ":TodoTelescope<CR>", { silent = true
 -- cursor in centre when scroll
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "C-u", "<C-u>zz")
+
+-- go out bracket
+vim.keymap.set("i", "ff", "<Esc>la")
