@@ -16,7 +16,8 @@ require("lazy").setup({
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.1",
 		dependencies = { "nvim-lua/plenary.nvim" },
-	},
+	}, -- new
+	-- { "rebelot/kanagawa.nvim" }, -- new end
 	{ "cooperuser/glowbeam.nvim" }, -- { -- // TODO: remove??
 	-- 	"joshdick/onedark.vim",
 	-- 	code_style = {
